@@ -19,4 +19,8 @@ function M.new_key_event(modifiers, key, is_down)
   return M.mark_event(event.newKeyEvent(modifiers, key, is_down))
 end
 
+function M.new_keycode_event(keycode, is_down)
+  return M.mark_event(event.newKeyEvent(keycode, is_down))
+end
+
 return M
